@@ -10,7 +10,13 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+  <? $this->headScript()->appendFile('http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js') ?>
+  <? $this->headLink()->appendStylesheet('/css/960/reset.css') ?>
+  <? $this->headLink()->appendStylesheet('/css/960/text.css') ?>
+  <? $this->headLink()->appendStylesheet('/css/960/960.css') ?>
+
+  <?= $this->headLink() ?>
+  <?= $this->headScript() ?>
 </head>
 <body>
   <div id="container">
