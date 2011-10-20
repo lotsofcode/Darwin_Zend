@@ -14,18 +14,22 @@
   <? $this->headLink()->appendStylesheet('/css/960/reset.css') ?>
   <? $this->headLink()->appendStylesheet('/css/960/text.css') ?>
   <? $this->headLink()->appendStylesheet('/css/960/960.css') ?>
-
+  <? $this->headLink()->appendStylesheet('/css/shared.css') ?>
   <?= $this->headLink() ?>
   <?= $this->headScript() ?>
 </head>
 <body>
-  <div id="container">
+  <div id="container" class="container_12">
     <header>
-        <h1>Darwin CMS Header</h1>
+        <h1 class="grid_12">
+          Darwin CMS
+        </h1>
     </header>
+    <hr>
     <div id="main" role="main">
         <?php echo $this->layout()->content ?>
     </div>
+    <hr>
     <footer>
         Darwin CMS Footer
     </footer>
