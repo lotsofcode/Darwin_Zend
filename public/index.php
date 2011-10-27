@@ -1,5 +1,9 @@
 <?php
 
+/*
+	Codify test comment
+*/
+
 // Define path to application directory
 defined('APPLICATION_PATH')
     || define(
